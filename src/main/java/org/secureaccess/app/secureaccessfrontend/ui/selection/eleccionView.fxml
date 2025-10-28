@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.secureaccess.app.secureaccessfrontend.ui.selection.eleccionController">
+   <children>
+      <Label layoutY="14.0" prefHeight="21.0" prefWidth="601.0" text="SecureAccess">
+         <font>
+            <Font name="Droid Sans" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="100.0" layoutX="127.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="90.0" fitWidth="100.0" layoutX="374.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="146.0" layoutY="200.0" text="Ciudadano" />
+      <Label layoutX="399.0" layoutY="200.0" text="Policía" />
+      <Label layoutX="90.0" layoutY="228.0" text="Acceso para consulta ciudadana" />
+      <Label layoutX="310.0" layoutY="228.0" text="Acceso autorizado para personal policial" />
+      <Button layoutX="99.0" layoutY="259.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="153.0" text="Ingresar como Ciudadano" />
+      <Button layoutX="341.0" layoutY="259.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="153.0" text="Ingresar como Policía" />
+      <Label layoutX="114.0" layoutY="296.0" text="1. Ver lista de buscados" />
+      <Label layoutX="114.0" layoutY="326.0" text="2. Reportar información" />
+      <Label layoutX="114.0" layoutY="356.0" text="3. Consultar recompensas" />
+      <Label layoutX="330.0" layoutY="296.0" text="1. Gestión completa de registros" />
+      <Label layoutX="328.0" layoutY="326.0" text="2. Actualizar estado de búsqueda" />
+      <Label layoutX="326.0" layoutY="356.0" text="3. Acceso a información clasificada" />
+   </children>
+</AnchorPane>
