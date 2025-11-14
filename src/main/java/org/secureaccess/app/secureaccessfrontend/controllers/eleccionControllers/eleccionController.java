@@ -1,4 +1,4 @@
-package org.secureaccess.app.secureaccessfrontend.ui.selection;
+package org.secureaccess.app.secureaccessfrontend.controllers.eleccionControllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,9 +16,7 @@ public class eleccionController {
     @FXML
     private void accesoLoginCiudadano(ActionEvent event) throws IOException {
 
-        String fxmlPath = "/org/secureaccess/app/secureaccessfrontend/ui/login/Ciudadano/loginCiudadanoView.fxml";
-
-        FXMLLoader fxmlCiudadano = new FXMLLoader(getClass().getResource(fxmlPath));
+        FXMLLoader fxmlCiudadano = new FXMLLoader(getClass().getResource("/ui/logins/loginCiudadanoView.fxml"));
 
         Parent loginCiudadano = fxmlCiudadano.load();
 
@@ -32,18 +30,30 @@ public class eleccionController {
     @FXML
     private void accesoLoginPolicia(ActionEvent event) throws IOException {
 
-        String fxmlPath = "/org/secureaccess/app/secureaccessfrontend/ui/login/Ciudadano/loginCiudadanoView.fxml";
+        FXMLLoader fxmlPolicia = new FXMLLoader(getClass().getResource("/ui/logins/loginPoliciaView.fxml"));
 
-        FXMLLoader fxmlCiudadano = new FXMLLoader(getClass().getResource(fxmlPath));
+        Parent loginPolicia = fxmlPolicia.load();
 
-        Parent loginCiudadano = fxmlCiudadano.load();
-
-        Scene escenarioLoginCiudadano = new Scene(loginCiudadano);
+        Scene escenarioLoginCiudadano = new Scene(loginPolicia);
         Stage ventanaActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
         ventanaActual.setScene(escenarioLoginCiudadano);
         ventanaActual.show();
 
+    }
+
+    @FXML
+    private void verEleccionAdministrador(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlTercera = new FXMLLoader(getClass().getResource("/ui/selection/terceraEleccionView.fxml"));
+
+        Parent terceraEleccion = fxmlTercera.load();
+
+        Scene escenarioLoginCiudadano = new Scene(terceraEleccion);
+        Stage ventanaActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        ventanaActual.setScene(escenarioLoginCiudadano);
+        ventanaActual.show();
     }
 
 
