@@ -12,7 +12,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
 
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ui/selection/eleccionView.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ui/selection/eleccionView.fxml"));
 
         Parent root = fxmlLoader.load();
 

@@ -6,11 +6,13 @@ module org.secureaccess.app.secureaccessfrontend {
     requires org.kordamp.bootstrapfx.core;
 
     opens org.secureaccess.app.secureaccessfrontend to javafx.fxml;
-    opens org.secureaccess.app.secureaccessfrontend.ui.login.Policia to javafx.fxml;
-    opens org.secureaccess.app.secureaccessfrontend.ui.login.Ciudadano to javafx.fxml;
-    opens org.secureaccess.app.secureaccessfrontend.ui.dashboard to javafx.fxml;
-    opens org.secureaccess.app.secureaccessfrontend.ui.selection to javafx.fxml;
 
 
     exports org.secureaccess.app.secureaccessfrontend;
+    exports org.secureaccess.app.secureaccessfrontend.controllers.menuControllers.listadoDelincuentesControllers;
+    opens org.secureaccess.app.secureaccessfrontend.controllers.menuControllers.listadoDelincuentesControllers to javafx.fxml;
+    exports org.secureaccess.app.secureaccessfrontend.controllers.loginsControllers;
+    opens org.secureaccess.app.secureaccessfrontend.controllers.loginsControllers to javafx.fxml;
+    exports org.secureaccess.app.secureaccessfrontend.controllers.eleccionControllers;
+    opens org.secureaccess.app.secureaccessfrontend.controllers.eleccionControllers to javafx.fxml;
 }
